@@ -1,0 +1,29 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" [src]="imagem" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">{{filme | uppercase}}</p>
+          <p class="card-text"><s>{{preco_anterior | currency: 'BRL'}}</s></p>
+          <p class="card-text">{{preco | currency: 'BRL'}}</p>
+          <p class="card-text">{{desc}}</p>
+        </div>
+      </div>      
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" [src]="imagem2" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">{{filme2 | uppercase}}</p>
+          <p class="card-text"><s>{{preco_anterior2 | currency: 'BRL'}}</s></p>
+          <p class="card-text">{{preco2 | currency: 'BRL'}}</p>
+          <p class="card-text">{{desc2}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
